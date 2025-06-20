@@ -1,0 +1,63 @@
+form, h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    gap:20px;
+}
+
+form input {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+form button {
+    width: 100px;
+    height: 39px;
+    border-radius: 5px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+.container{
+    margin:auto;
+    align-items: center ;
+}
+.tododiv{
+    margin-top: 1rem;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black
+
+}
+
+.todotit{
+    display:flex;
+    gap: 1rem;
+    align-items: center;
+
+}
+
+input[type="checkbox"]{
+    height:25px;    
+    width:25px;
+    border-radius: 50px;
+    accent-color: black;
+}
+
+.crosbtn{
+    font-size: 1.3rem;
+    cursor:pointer;
+    margin-right: 30px;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.8px;
+}
