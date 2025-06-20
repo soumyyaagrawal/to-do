@@ -4,7 +4,7 @@ function Todos( {todos, completetodo, removetodo} ) {
     console.log(todos)
   return (
     <div>
-      <h2>Todo List</h2>
+      <h2>To do List</h2>
       {todos.map((todo)=> (<Todo {...todo} key={todo.id} completetodo={completetodo} removetodo={removetodo}/>))
 
 }
