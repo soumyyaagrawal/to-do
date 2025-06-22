@@ -3,6 +3,8 @@ import React from 'react'
 import './App.css';
 import Todoform from './todoform.jsx';
 import Todos from './todos.jsx';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
@@ -42,6 +44,7 @@ settodos(newTodo);
 
   return (
   <div className="container">
+    <ToastContainer position='top-center' autoClose={1000} hideProgressBar={false} closeOnClick pauseOnHover draggable theme='light' />
     <h1>
       To Do! </h1>
     <Todoform addtodo={addtodo} />

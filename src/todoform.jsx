@@ -1,6 +1,7 @@
 import react from 'react';
 import {v4 as uuid} from "uuid";
 import { useState } from 'react';
+import {toast} from 'react-toastify';
 
 import './App.css';
 
@@ -8,8 +9,9 @@ function Todoform({addtodo}){
      const [title, settitle]= useState("");
      
     let saveTodo=  (event) => {
+          event.preventDefault();
         if (title.trim().length ===0){
-            alert("please fill the input")
+            toast.error("please fill the input");
             return;
         }
         const newtodo={
@@ -19,7 +21,7 @@ function Todoform({addtodo}){
         }
     addtodo(newtodo);
     settitle("");
-    event.preventDefault();
+  
     
         
     }
